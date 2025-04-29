@@ -1,0 +1,8 @@
+# Ignore test dataset folder
+test_dataset/
+
+# Ignore zip file
+partial_test_dataset.zip
+
+# Ignore test folder
+test/

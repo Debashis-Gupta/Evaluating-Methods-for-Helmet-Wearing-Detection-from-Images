@@ -1,0 +1,15 @@
+# helmet.yaml
+train: "give the directory of the train data"
+output_dir: "give the directory of the train data"
+model_name: "give preferred model path"
+overwrite: False
+project_name:"give the project name"
+epochs: 100
+batch_size: 32
+img_size: 256
+
+nc: 3
+names: 
+  0: helmet
+  1: driver
+  2: passenger

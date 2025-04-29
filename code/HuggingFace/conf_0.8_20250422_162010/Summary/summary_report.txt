@@ -1,0 +1,53 @@
+================================================================================
+HELMET DETECTION MODELS EVALUATION SUMMARY
+Confidence Threshold: 0.8
+Date: 2025-04-22 16:27:28
+================================================================================
+
+--------------------------------------------------------------------------------
+CLASSIFICATION METRICS SUMMARY
+--------------------------------------------------------------------------------
+Model      Accuracy        Precision       Recall          F1 Score       
+Yolov5     0.1955±0.0478   0.9983±0.0034   0.0778±0.0550   0.1396±0.0931  
+Yolov8     0.2099±0.0494   0.9944±0.0080   0.0943±0.0567   0.1675±0.0931  
+Yolov12    0.2575±0.1114   0.9971±0.0045   0.1490±0.1280   0.2389±0.1829  
+RTDETR     0.4215±0.1745   0.7919±0.3960   0.3404±0.2024   0.4675±0.2581  
+
+--------------------------------------------------------------------------------
+ERROR METRICS SUMMARY
+--------------------------------------------------------------------------------
+Model      MSE             MAE             RMSE           
+Yolov5     1.4433±0.0664   1.0226±0.0479   1.2010±0.0278  
+Yolov8     1.4297±0.0600   1.0085±0.0493   1.1954±0.0251  
+Yolov12    1.3656±0.1504   0.9606±0.1116   1.1667±0.0660  
+RTDETR     1.1475±0.2503   0.7950±0.1767   1.0648±0.1173  
+
+--------------------------------------------------------------------------------
+BEST MODEL ANALYSIS
+--------------------------------------------------------------------------------
+Best model for accuracy: RTDETR (0.4215)
+Best model for precision: Yolov5 (0.9983)
+Best model for recall: RTDETR (0.3404)
+Best model for f1_score: RTDETR (0.4675)
+Best model for mse: RTDETR (1.1475)
+Best model for mae: RTDETR (0.7950)
+Best model for rmse: RTDETR (1.0648)
+
+--------------------------------------------------------------------------------
+RECOMMENDATIONS
+--------------------------------------------------------------------------------
+Overall best model(s) based on performance across metrics: RTDETR
+
+Specific recommendations:
+- For best classification performance (helmet presence): RTDETR
+- For best helmet count accuracy: RTDETR
+- Overall recommendation: RTDETR provides the best balance of metrics
+
+--------------------------------------------------------------------------------
+NOTES
+--------------------------------------------------------------------------------
+- Results are averaged across 5 cross-validation folds
+- Confidence threshold: 0.8
+- Values are reported as mean±std
+- Lower values are better for MSE, MAE, and RMSE
+- Higher values are better for Accuracy, Precision, Recall, and F1 Score
